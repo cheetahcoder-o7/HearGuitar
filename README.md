@@ -1,1 +1,1 @@
-Within the file there a readme :)
+Within the file theres a readme :)
