@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Teacher - HearGuitar</title>
+    <link rel="stylesheet" href="css/songTeachStyle.css">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+</head>
+<body>
+
+<header>
+    <h1>Song Teacher</h1>
+</header>
+
+<main class="container">
+    <label for="songInput">Enter Chords (comma separated):</label>
+    <input id="songInput" type="text" />
+    <button id="startBtn">Start!</button>
+
+    <section id="instructionArea" tabindex="0" aria-live="polite">
+        <p id="instructionText">Chords will appear here.</p>
+    </section>
+
+    <p id="errorText" role="alert"></p>
+
+    <button onclick="navigate('HearGuitar.html')">Back</button>
+</main>
+
+<script src="js/storage.js"></script>
+<script src="js/tts.js"></script>
+<script src="js/chordData.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/songTeacher.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

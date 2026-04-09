@@ -1,0 +1,93 @@
+/* --- Global Styles --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* --- Container --- */
+.container {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+/* --- Labels --- */
+label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: block;
+}
+
+/* --- Input --- */
+#chordInput {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    outline: none;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+#chordInput:focus {
+    border-color: #29b6f6;
+    box-shadow: 0 0 6px rgba(33, 150, 243, 0.3);
+}
+
+/* --- Buttons --- */
+button {
+    font-size: 1rem;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #29b6f6;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+button:hover {
+    background-color: #0288d1;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* --- Instruction Area --- */
+#instructionArea {
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #e3f2fd;
+    border: 1px solid #90caf9;
+    margin-bottom: 15px;
+    min-height: 60px;
+}
+
+/* --- Error Text --- */
+#errorText {
+    color: #d32f2f;
+    font-weight: 600;
+    min-height: 1.2em;
+    margin-bottom: 15px;
+}
+
+/* --- Responsive --- */
+@media (max-width: 450px) {
+    #chordInput, button {
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+}

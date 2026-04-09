@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HearGuitar Info</title>
+    <link rel="stylesheet" href="css/infoStyle.css">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+</head>
+<body>
+
+<header>
+    <h1>- Info -</h1>
+</header>
+
+<main class="container">
+
+    <!-- Welcome -->
+    <section id="welcomeSection">
+        <h2>Welcome to HearGuitar</h2>
+        <p id="welcomeMessage">
+            Welcome! This app is designed to help you learn guitar using sound and step-by-step guidance.
+        </p>
+        <button onclick="readSection('welcomeSection')">Read Welcome</button>
+    </section>
+
+    <!-- Controls -->
+    <section id="controlsSection">
+        <h2>Controls</h2>
+        <ul>
+            <li><strong>Chord Teacher Arrow Functions:</strong></li>
+            <li>Right Arrow: Next instruction</li>
+            <li>Left Arrow: Previous instruction</li>
+            <li>Down Arrow: Repeat instruction (voice only)</li>
+            <li>Up Arrow: Repeat sound</li>
+
+            <br>
+
+            <li><strong>Song Teacher Arrow Functions:</strong></li>
+            <li>Right Arrow: Next chord</li>
+            <li>Left Arrow: Previous chord</li>
+            <li>Down Arrow: Repeat chord (voice only)</li>
+            <li>Up Arrow: Play chord sound</li>
+        </ul>
+        <button onclick="readSection('controlsSection')">Read Controls</button>
+    </section>
+
+    <!-- Guitar Basics -->
+    <section id="basicsSection">
+        <h2>Guitar Basics</h2>
+
+        <h3>Fretboard</h3>
+        <p>The guitar has six strings. The first string is the thinnest (high E), and the sixth string is the thickest (low E).</p>
+        <p>Frets are the metal bars along the neck. Pressing a string on a fret changes the pitch.</p>
+        <p>Every move up the fretboard on the same string increases the pitch by a half note.</p>
+
+        <h3>Bar</h3>
+        <p>A bar means using one finger to press down every string across a fret. This is done with your index finger.</p>
+
+        <h3>Mute</h3>
+        <p>Muting a string means you either touch it lightly so it does not produce a sound, or you forgo strumming it.</p>
+
+        <button onclick="readSection('basicsSection')">Read Guitar Basics</button>
+    </section>
+
+    <button onclick="navigate('HearGuitar.html')">Back</button>
+
+</main>
+
+<script src="js/tts.js"></script>
+<script src="js/infoReader.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

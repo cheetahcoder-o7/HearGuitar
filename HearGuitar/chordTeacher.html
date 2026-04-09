@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chord Teacher - HearGuitar</title>
+    <link rel="stylesheet" href="css/chordTeachStyle.css">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+</head>
+<body>
+
+<header>
+    <h1>Chord Teacher</h1>
+</header>
+
+<main class="container">
+    <label for="chordInput">Enter Chord:</label>
+    <input id="chordInput" type="text" />
+    <button id="teachBtn">Teach Me!</button>
+
+    <div>
+        <label>
+            <input type="checkbox" id="toggleStrings">
+            Use Letters instead of Numbers for Strings (EADGBE)
+        </label>
+    </div>
+
+    <!-- Instruction display area -->
+    <section id="instructionArea" tabindex="0" aria-live="polite">
+        <p id="instructionText">Instructions will appear here.</p>
+    </section>
+
+    <p id="errorText" role="alert"></p>
+
+    <button onclick="navigate('HearGuitar.html')">Back</button>
+</main>
+
+<script src="js/storage.js"></script>
+<script src="js/tts.js"></script>
+<script src="js/chordData.js"></script>
+<script src="js/instructionCreator.js"></script>
+<script src="js/instructionGiver.js"></script>
+<script src="js/main.js"></script>
+<script src="js/normalizer.js"></script>
+<script src="js/audio.js"></script>
+
+</body>
+</html>
